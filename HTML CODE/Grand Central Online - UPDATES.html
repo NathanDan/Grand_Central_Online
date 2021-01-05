@@ -1,0 +1,187 @@
+<!-- NATHAN JONES 2019 GRAND CENTRAL ONLINE MAIN PAGE -->
+<!-- THIS WILL ACT AS THE UPDATE PAGE WHERE ALL OF THE RECENT UPDATES WILL BE LISTED ALONG WITH A DESCRIPTION -->
+<html>
+<!-- CREATING THE MAIN BODY THAT WILL HOUSE EVERYTHING THAT IS BEING DISPLAYED ON THE PAGE -->
+<body>
+<title> GRAND CENTAL ONLINE - UPDTAES </title>
+<!-- THIS CREATES THE SCROLLING TEXT AT THE TOP OF THE PAGE -->
+<font face = "bahnschrift"><marquee style="font-size:14px; background-color:#000000; color:#f1eded;"> LATEST UPDATE: SEPTEMBER 21ST 2019 - GRAND CENTRAL ONLINE - LOCATION IS CREATED! SELECT IT IN THE MENU TO SEE IT IN ACTION! || Grand Central Online || HUAWEI BANNED IN THE US: RIGHT OR WRONG?  </marquee></font>
+<!-- THE FOLLOWING IS WHAT MAKES UP THE SIDE MENU FOR THE USER TO INTEREACT WITH -->
+<body>
+<!-- CREATING THE DIV THAT WILL HOUSE THE BUTTONS THAT WILL BE HOUSED IN THE SIDE MENU -->
+<div id="mySidenav" class="sidenav">
+  <font face = "bahnschrift"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a></font>
+  <!-- CREATING THE BUTTON TAHT WILL TAKE THE USER TO THE NEXT PAGE IN THIS CASE THE PAGE THAT WILL DISPLAY THE MAIN MENU OF GRAND CENTRAL ONLINE -->
+  <font face = "bahnschrift"><a onclick="window.location.href = 'Grand Central Online - MSTR.html';">Grand Central Home</a></font>
+  <!-- CREATING THE BUTTON TAHT WILL TAKE THE USER TO THE LOGIN PAGE OF BLACKBOARD, WHICH IS AN INTERNAL SITE OF THE UNIVERSITY OF LINCOLN -->
+  <font face = "bahnschrift"><a onclick="window.location.href = 'https://blackboard.lincoln.ac.uk';">University of Lincoln Blackboard</a></font>
+  <!-- CREATING THE BUTTON TAHT WILL TAKE THE USER TO THE NEXT PAGE IN THIS CASE THE PAGE THAT WILL DISPLAY THE INFO OF GRAND CENTRAL ONLINE -->
+  <font face = "bahnschrift"><a onclick="window.location.href = 'Grand Central Online - INFO.html';">Grand Central Info</a></font>
+  <!-- TAKING THE USER TO GRAND CENTRAL MESSAGING -->
+  <font face = "bahnschrift"><a onclick="window.location.href = Grand Central Online Messaging.html';">Grand Central Messaging</a></font>
+  <!-- CREATING THE BUTTON TAHT WILL TAKE THE USER TO THE NEXT PAGE IN THIS CASE THE PAGE THAT WILL DISPLAY THE WEATHER PAGE OF GRAND CENTRAL ONLINE -->
+  <font face = "bahnschrift"><a onclick="window.location.href = 'Grand Central Online - WEATHER.html';">Grand Central Weather</a></font>
+  <!-- CREATING THE BUTTON TAHT WILL TAKE THE USER TO THE NEXT PAGE IN THIS CASE THE PAGE THAT WILL DISPLAY THE MAPS PAGE OF GRAND CENTRAL ONLINE -->
+  <font face = "bahnschrift"><a onclick="window.location.href = 'Grand Central Online - Location.html';">Grand Central Location</a></font>
+  <!-- TAKING THE USER TO THE GRAND CENTRAL NEWS PAGE (SKY NEWS) -->
+  <font face = "bahnschrift"><a onclick="window.location.href = 'Grand Central Online News (SKY).html';">Grand Central News - SKY NEWS</a></font>
+  <!-- TAKING THE USER TO THE GRAND CENTRAL NEWS PAGE (BBC NEWS) -->
+  <font face = "bahnschrift"><a onclick="window.location.href = 'Grand Central Online News (BBC).html';">Grand Central News - BBC NEWS</a></font>
+  <!-- TAKING THE USER TO THE HOME PAGE OF YOUTUBE -->
+  <font face = "bahnschrift"><a onclick="window.location.href = 'https://www.youtube.co.uk';">YouTube</a></font>
+  <!-- TAKING TEH USER TO THE HOME PAGE OF GOOGLE -->
+  <font face = "bahnschrift"><a onclick="window.location.href = 'https://www.google.co.uk';">Google</a></font>
+  <!-- CREATING THE LOG OUT BUTTON SO THAT IT WILL TAE THE USER BACK TO THE LOG IN PAGE ONCE THEY HAVE FINISHED IN THE ONLINE EDITION -->
+  <font face = "bahnschrift"><a align="bottom" onclick="window.location.href = 'Grand Central Online Log In.html';">Log Out</a></font>
+</div>
+<!-- THIS IS THE SECTION THAT WILL HOUSE THE SIDE MENU BUTTON LOCATED AT THE TOP OF THE PAGE ON THE LEFT HAND SIDE -->
+<span style="font-size:22px;cursor:pointer" onclick="openNav()">&#9776; </span>
+<!-- THIS IS THE SCRIPT THAT WILL BE RESPONSIBLE TO THE OPENING AND CLOSING OF THE SIDE NAV WINDOW -->
+<script>
+/* THIS IS THE PART THAT DETERMINES THE SIZE OF THE SIDE BAR MENU AND HOW MUCH IT WILL EXPAND  */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "320px";
+}
+/* THIS IS THE PART THAT WILL DETERMINE THE SIZE OF THE CLOSE BUTTON ON THE SIDE MENU WINDOW */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+</body>
+
+<font face = "bahnschrift"><b> GRAND CENTAL ONLINE - UPDTAES </b></font>
+<!-- THIS IS THE SECTION THAT WILL GATHER INFORMATION ABOUT THE CURRENT SYSTEMS SCREEN SO THAT THE BACKGROUND IMAGE CAN BE SCALED FOR THE SCREEN -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+  height: 100%;
+  margin: 0;
+}
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+/* THIS SECTION WILL CONTROL THE COLOUR, SIZE, FONT AND LOCATION OF THE TEXT IN THE SIDE NAV WINDOW */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 30px;
+    margin-left: 50px;
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 15px;}
+  }
+</style>
+
+<div class="bg"></div>
+
+<!-- THIS IS THE PART THAT IS DEFING WHERE THE FOOTER OF THE PAGE WILL BE DISPLAYED TO THE USER -->
+<!-- THIS IS THE PART THAT IS DEFING WHERE THE FIRST FOOTER OF THE PAGE WILL BE DISPLAYED TO THE USER ALONG WITH CSS STYLES TO CHANGE THE POSITION -->
+<style type ="text/css">
+  .footer1{
+    position: fixed;
+    text-align: center;
+    bottom: 15px;
+    width: 100%
+  }
+</style>
+<!-- THIS IS THE PART THAT IS DEFING WHERE THE SECOND FOOTER OF THE PAGE WILL BE DISPLAYED TO THE USER ALONG WITH CSS STYLES TO CHANGE THE POSITION -->
+<style type ="text/css">
+  .footer2{
+    position: fixed;
+    text-align: center;
+    bottom: 0px;
+    width: 100%
+  }
+</style>
+
+<!-- THE FOLLOWING HOUSES ALL OF THE UPDATE MESSAGES FOR THE USER TO SEE THIS ALLOWS FOR A REFINED LOOK OF GRAND CENTRAL ONLINE AND MORE OF A PROFESSIONAL LOOK -->
+<p><font face = "bahnschrift"><b> SEPTEMBER 21ST 2019 - GRAND CENTRAL ONLINE - LOCATION IS CREATED! </b></font></p>
+<p><font face = "bahnschrift"><small> As of the 21st September 2019 at 19:25:22 Grand Cental Online has a new feature that allows for the current geo-location of the users machine, it is not onlay a cool feature but also one for security so that Grand Central Online Edition can be tracked wherever it has been enabled
+allowing for greater security and also acts as a form of validation for the program to determine whether the software should be enable in that location or machine.  </small></font></p>
+
+<p><font face = "bahnschrift"><b> AUGUST 17TH 2019 - GRAND CENTRAL ONLINE WEATHER - IS ADDDED!  </b></font></p>
+<p><font face = "bahnschrift"><small> On the 17th August 2019 at 10:02:27 Grand Central Online Weather has been added and allows those who use Grand Central Online to have a 7-day forcast for a location that they specify along with 6 other cities that they can choose or can be left pre-determined, this
+allows Grand Central Online to be even more useful and real-world applicable it is an essential that we take for advantage but generally have to open another web page or application to have a look at, so by intergrating it into the Homepage of Grand Central Online it makes checking the weather as easier than ever!  </small></font></p>
+
+<p><font face = "bahnschrift"><b> AUGUST 16TH 2019 - GRAND CENTRAL ONLINE HAS A NEW FEATURE!  </b></font></p>
+<p><font face = "bahnschrift"><small> On the 16th August 2019 at 13:44:31 Grand Central Online has a new feature that allows those who use Grand Central Online to have a 7-day forcast for a location that they specify, this allows Grand Central Online to be even more useful and real-world applicable it is
+an essential that we take for advantage but generally have to open another web page or application to have a look at, so by intergrating it into the Homepage of Grand Central Online it makes checking the weather as easier than ever!  </small></font></p>
+
+<p><font face = "bahnschrift"><b> AUGUST 16TH 2019 - GRAND CENTRAL ONLINE HAS A NEW LINK - UNIVERSITY OF LINCOLN'S BLACKBOARD!  </b></font></p>
+<p><font face = "bahnschrift"><small> On the 16th August 2019 at 11:34:57 Grand Central Online has a new feature that allows those who use Grand Central Online to have direct access to the login page of Blackboard which is the University of Lincoln's own internal site for their students to utilise as it
+gives a base for the students to check their grades, lessons, emails and connect with teachers/students. This intergration into this Grand Central allows for it to stay current and to be used alonside Blackboard as it provides a quick and convient access.  </small></font></p>
+
+<p><font face = "bahnschrift"><b> JUNE 6TH 2019 - GRAND CENTRAL ONLINE HAS A NEW FEATURE!  </b></font></p>
+<p><font face = "bahnschrift"><small> On the 6th June 2019 at 08:52:24 Grand Central Online has a new feature that allows those who use Grand Central Online to view all of the updates that Grand Central Online has been through, it displays the header of the update along with the date of the update
+followed by underneath a detailed description of what the update included, this allows for not only Grand Central users to see how the system has developed but also as a timeline for future reference.  </small></font></p>
+
+<p><font face = "bahnschrift"><b> MAY 24TH 2019 - GRAND CENTRAL ONLINE HAS A NEW FEATURE!  </b></font></p>
+<p><font face = "bahnschrift"><small> On the 24th May 2019 at ‏‎10:32:14 Grand Central Online has a new feature that makes Grand Central Online look more professional and ultimatley allow for important messages that the user needs to know being displayed right there in view. The new feature is indeed
+the use of the a scrolling banner at the top of the main pages within Grand Central Online which displays important messages about Grand Cental Online at that time and then a scrolling banner in the news feeds that displays "BREAKING NEWS" to make the news feeds look professional.  </small></font></p>
+
+<p><font face = "bahnschrift"><b> MAY 10TH 2019 - GRAND CENTRAL ONLINE MESSAGING - IS IN DEVELOPMENT!  </b></font></p>
+<p><font face = "bahnschrift"><small> On the 10th May 2019 at ‏‎11:54:41 Grand Central Online has a new feature in DEVELOPMENT the feature that is in development is the Grand Central Online Messaging. This will allow users of Grand Central to communicate with other Grand Central users through the central
+  messaging service just like on the Desktop Version of Grand Central, this will allow Grand Central Online to stand out from the rest of the competiotion that rivals the concept of Grand Central. The messaging service is currently in development and will be releasing in the coming months! </small></font></p>
+
+<p><font face = "bahnschrift"><b> MAY 8TH 2019 - GRAND CENTRAL ONLINE BBC NEWS FEED - IS ADDED!  </b></font></p>
+<p><font face = "bahnschrift"><small> As of the 8th May 2019 at 12:29:53 Grand Central has a new feature that allows for the user of Grand Central to follow live and breaking news from within Grand Central Online but from an alternative news provider, the news provider that has been added for Grand
+  Central Online is BBC News. By using BBC News it allows the user to have a feed of the latest headlines from the UK and the World, however unlike the SKY Feed there is no livestream avaliable for the BBC. Other than this it is practically the same as the SKY News Feed minus the livestream. </small></font></p>
+
+<p><font face = "bahnschrift"><b> MAY 5TH 2019 - GRAND CENTRAL ONLINE SKY NEWS FEED - IS ADDED!  </b></font></p>
+<p><font face = "bahnschrift"><small> As of the 5th May 2019 at 13:59:41 Grand Central has a new feature that allows for the user of Grand Central to follow live and breaking news from within Grand Central Online, the news provider that has been used for this feed is SKY News. By using SKY News it allows
+the user to not only have a feed of the latest headlines from the UK and the World, but also the use of the livestream of SKY News so they can also watch in real time. This allows for the user to keep upto date with what is going on in the World all from one central hub which ultimatley gets rid of
+the hastle to search in a seperate tab for the latest news - This is what makes Grand Central Online stand out from the rest! </small></font></p>
+
+<p><font face = "bahnschrift"><b> APRIL 30TH 2019 - GRAND CENTRAL ONLINE INFO - IS ADDED!  </b></font></p>
+<p><font face = "bahnschrift"><small> As of the 30th April 2019 at 15:02:33 Grand Cental Online has a new feature that is added allowing anybody who wants to understand where the idea of Grand Cental Online came from and what the edition of Grand Cental Online they are on can do. It allowS for the user
+  to fully understand their Grand Cental Online and the capabilites of it. </small></font></p>
+
+<p><font face = "bahnschrift"><b> APRIL 29TH 2019 - GRAND CENTRAL ONLINE HAS A NEW LINKS ADDED!  </b></font></p>
+<p><font face = "bahnschrift"><small> As of the 29th April 2019 at 16:46:30 Grand Central has new links! The following links have been added for the user to use as quick access: Google and Youtube. These links allow for the user to seemlessly use all of the functionalites that they have been able to use before,
+  which allows for the transition from prior to Grand Central Online to the online edition. They are avaliable right now in your side menu! </small></font></p>
+
+<p><font face = "bahnschrift"><b> APRIL 28TH 2019 - GRAND CENTRAL ONLINE HAS A NEW FEATURE!  </b></font></p>
+<p><font face = "bahnschrift"><small> As of the 28th April 2019 at 11:59:56 Grand Central has a new feature that allows for the user of Grand Central Online to easily navigate through the various webpages that make Grand Central Online. The feature that is added is the side menu that is accessed when the
+  user clicks the 3 lines next to the title of the page, this will then open up the side navigation bar that will have every single option that is avaliable to that user - in time there will be more links avaliable to new pages that will be added in future updates. </small></font></p>
+
+<p><font face = "bahnschrift"><b> APRIL 26TH 2019 - GRAND CENTRAL ONLINE - IS CREATED! </b></font></p>
+<p><font face = "bahnschrift"><small> As of the 26th April 2019 at 08:56:32 Grand Cental Online is created, it is intended to be an online version of the Grand Central Desktop Version with the same functionalities and charactersitics of the Desktop Version. The first version of Grand Cental had a Main Page
+  and a Login Page that had a few security issues, on the main page there was a background that was simular to the Master Edition of the Desktop Version. </small></font></p>
+
+<!-- ACTING AS THE PLACE HOLDER AT THE BOTTOM OF THE PAGE SO THAT THE DISCLAIMERS/MESSAGE IN THE FOOTER IS NOT COVERED -->
+<p><font face = "bahnschrift"><b>.  </b></font></p>
+<p><font face = "bahnschrift"><small>. </small></font></p>
+
+<!-- THE FOLLOWING WILL BE DISPLAYED AT THE BOTTOM OF THE PAGE -->
+<!-- DEFING THE SIZE OF THE TEXT THAT WILL BE IN THE FOOTER, ALONG WITH THE FONT TYPE AND DEFING IT TO BE BOLD -->
+<div class="footer1"><small><font face = "bahnschrift"><b> Copyright © 2019 Grand Central Online Edition. All Rights Reserved. </b></font></small></div>
+<!-- DEFING THE SIZE OF THE TEXT THAT WILL BE IN THE FOOTER, ALONG WITH THE FONT TYPE AND DEFING IT TO BE BOLD -->
+<div class="footer2"><small><font face = "bahnschrift"><b> Copyright © 2019 Nathan Jones. All Rights Reserved. </b></font></small></div>
+
+</body>
+</html>

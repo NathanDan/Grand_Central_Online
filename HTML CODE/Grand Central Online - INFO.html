@@ -1,0 +1,148 @@
+<!-- NATHAN JONES 2019 GRAND CENTRAL ONLINE MAIN PAGE -->
+
+<html>
+<!-- THIS IS THE SECTION THAT WILL HOLD THE INFO SECTION OF THE GRAND CENTRAL ONLINE EDITION -->
+<body>
+<title>GRAND CENTRAL INFO </title>
+<!-- THIS CREATES THE SCROLLING TEXT AT THE TOP OF THE PAGE -->
+<font face = "bahnschrift"><marquee style="font-size:14px; background-color:#000000; color:#f1eded; "> LATEST UPDATE: SEPTEMBER 21ST 2019 - GRAND CENTRAL ONLINE - LOCATION IS CREATED! SELECT IT IN THE MENU TO SEE IT IN ACTION! || Grand Central Online || HUAWEI BANNED IN THE US: RIGHT OR WRONG?  </marquee></font>
+<!-- THE FOLLOWING IS WHAT MAKES UP THE SIDE MENU FOR THE USER TO INTEREACT WITH -->
+<body>
+<!-- CREATING THE DIV THAT WILL HOUSE THE BUTTONS THAT WILL BE HOUSED IN THE SIDE MENU -->
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <!-- CREATING THE BUTTON TAHT WILL TAKE THE USER TO THE NEXT PAGE IN THIS CASE THE PAGE THAT WILL DISPLAY THE MAIN MENU OF GRAND CENTRAL ONLINE -->
+  <font face = "bahnschrift"><a onclick="window.location.href = 'Grand Central Online - MSTR.html';">Grand Central Home</a></font>
+  <!-- CREATING THE BUTTON TAHT WILL TAKE THE USER TO THE LOGIN PAGE OF BLACKBOARD, WHICH IS AN INTERNAL SITE OF THE UNIVERSITY OF LINCOLN -->
+  <font face = "bahnschrift"><a onclick="window.location.href = 'https://blackboard.lincoln.ac.uk';">University of Lincoln Blackboard</a></font>
+  <!-- CREATING THE BUTTON TAHT WILL TAKE THE USER TO THE NEXT PAGE IN THIS CASE THE PAGE THAT WILL DISPLAY THE UPDATES OF GRAND CENTRAL ONLINE -->
+  <font face = "bahnschrift"><a onclick="window.location.href = 'Grand Central Online - UPDATES.html';">Grand Central Updates</a></font>
+  <!-- TAKING THE USER TO GRAND CENTRAL MESSAGING -->
+  <font face = "bahnschrift"><a onclick="window.location.href = 'Grand Central Online Messaging.html';">Grand Central Messaging</a></font>
+  <!-- CREATING THE BUTTON TAHT WILL TAKE THE USER TO THE NEXT PAGE IN THIS CASE THE PAGE THAT WILL DISPLAY THE WEATHER PAGE OF GRAND CENTRAL ONLINE -->
+  <font face = "bahnschrift"><a onclick="window.location.href = 'Grand Central Online - WEATHER.html';">Grand Central Weather</a></font>
+  <!-- CREATING THE BUTTON TAHT WILL TAKE THE USER TO THE NEXT PAGE IN THIS CASE THE PAGE THAT WILL DISPLAY THE MAPS PAGE OF GRAND CENTRAL ONLINE -->
+  <font face = "bahnschrift"><a onclick="window.location.href = 'Grand Central Online - Location.html';">Grand Central Location</a></font>
+  <!-- TAKING THE USER TO THE GRAND CENTRAL NEWS PAGE (SKY NEWS) -->
+  <font face = "bahnschrift"><a onclick="window.location.href = 'Grand Central Online News (SKY).html';">Grand Central News - SKY NEWS</a></font>
+  <!-- TAKING THE USER TO THE GRAND CENTRAL NEWS PAGE (BBC NEWS) -->
+  <font face = "bahnschrift"><a onclick="window.location.href = 'Grand Central Online News (BBC).html';">Grand Central News - BBC NEWS</a></font>
+  <!-- TAKING THE USER TO THE HOME PAGE OF YOUTUBE -->
+  <font face = "bahnschrift"><a onclick="window.location.href = 'https://www.youtube.co.uk';">YouTube</a></font>
+  <!-- TAKING TEH USER TO THE HOME PAGE OF GOOGLE -->
+  <font face = "bahnschrift"><a onclick="window.location.href = 'https://www.google.co.uk';">Google</a></font>
+  <!-- CREATING THE LOG OUT BUTTON SO THAT IT WILL TAE THE USER BACK TO THE LOG IN PAGE ONCE THEY HAVE FINISHED IN THE ONLINE EDITION -->
+  <font face = "bahnschrift"><a align="bottom" onclick="window.location.href = 'Grand Central Online Log In.html';">Log Out</a></font>
+</div>
+<!-- THIS IS THE SECTION THAT WILL HOUSE THE SIDE MENU BUTTON LOCATED AT THE TOP OF THE PAGE ON THE LEFT HAND SIDE -->
+<span style="font-size:22px;cursor:pointer" onclick="openNav()">&#9776; </span>
+<!-- THIS IS THE SCRIPT THAT WILL BE RESPONSIBLE TO THE OPENING AND CLOSING OF THE SIDE NAV WINDOW -->
+<script>
+/* THIS IS THE PART THAT DETERMINES THE SIZE OF THE SIDE BAR MENU AND HOW MUCH IT WILL EXPAND  */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "320px";
+}
+/* THIS IS THE PART THAT WILL DETERMINE THE SIZE OF THE CLOSE BUTTON ON THE SIDE MENU WINDOW */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+</body>
+<font face = "bahnschrift"><b> GRAND CENTRAL - ONLINE EDITION - INFO </b></font>
+<!-- THIS IS THE SECTION THAT WILL GATHER INFORMATION ABOUT THE CURRENT SYSTEMS SCREEN SO THAT THE BACKGROUND IMAGE CAN BE SCALED FOR THE SCREEN -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{
+  height: 100%;
+  margin: 0;
+}
+/*THIS IS THE SECTION THAT WILL HOUSE THE BACKGROUND IMAGE FOR GRAND CENTRAL ONLINE, ALONG WITH ITS INSTRUCTIONS TO RESIZE TO FIT THE SCREEN */
+  .bg{
+    background-image:url("MSTRINFO.png");
+    height: 99%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+/* THIS SECTION WILL CONTROL THE COLOUR, SIZE, FONT AND LOCATION OF THE TEXT IN THE SIDE NAV WINDOW */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 30px;
+    margin-left: 50px;
+  }
+
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 15px;}
+  }
+</style>
+<div class="bg"></div>
+
+
+<!-- THIS IS THE PART THAT IS DEFING WHERE THE FOOTER OF THE PAGE WILL BE DISPLAYED TO THE USER -->
+<!-- THIS IS THE PART THAT IS DEFING WHERE THE FIRST FOOTER OF THE PAGE WILL BE DISPLAYED TO THE USER ALONG WITH CSS STYLES TO CHANGE THE POSITION -->
+<style type ="text/css">
+  .footer{
+    position: fixed;
+    text-align: center;
+    bottom: 30px;
+    width: 100%
+  }
+</style>
+<!-- THIS IS THE PART THAT IS DEFING WHERE THE SECOND FOOTER OF THE PAGE WILL BE DISPLAYED TO THE USER ALONG WITH CSS STYLES TO CHANGE THE POSITION -->
+<style type ="text/css">
+  .footer1{
+    position: fixed;
+    text-align: center;
+    bottom: 15px;
+    width: 100%
+  }
+</style>
+<!-- THIS IS THE PART THAT IS DEFING WHERE THE THIRD FOOTER OF THE PAGE WILL BE DISPLAYED TO THE USER ALONG WITH CSS STYLES TO CHANGE THE POSITION -->
+<style type ="text/css">
+  .footer2{
+    position: fixed;
+    text-align: center;
+    bottom: 0px;
+    width: 100%
+  }
+</style>
+
+<!-- THE FOLLOWING WILL BE DISPLAYED AT THE BOTTOM OF THE PAGE -->
+<!-- DEFING THE SIZE OF THE TEXT THAT WILL BE IN THE FOOTER, ALONG WITH THE FONT TYPE AND DEFING IT TO BE BOLD -->
+<div class="footer"><small><font face = "bahnschrift"><b> Grand Central Online was designed, developed and coded by Nathan Jones 2019 </b></font></small></div>
+<!-- DEFING THE SIZE OF THE TEXT THAT WILL BE IN THE FOOTER, ALONG WITH THE FONT TYPE AND DEFING IT TO BE BOLD -->
+<div class="footer1"><small><font face = "bahnschrift"><b> Copyright © 2019 Grand Central Online Edition. All Rights Reserved. </b></font></small></div>
+<!-- DEFING THE SIZE OF THE TEXT THAT WILL BE IN THE FOOTER, ALONG WITH THE FONT TYPE AND DEFING IT TO BE BOLD -->
+<div class="footer2"><small><font face = "bahnschrift"><b> Copyright © 2019 Nathan Jones. All Rights Reserved. </b></font></small></div>
+
+</body>
+</html>
